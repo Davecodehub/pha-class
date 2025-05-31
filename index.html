@@ -4,8 +4,98 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PHA Class Assignment</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: "Kumbh Sans", sans-serif;
+    }
+
+    body {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: hsl(185, 75%, 39%);
+      background-image: url(bg-pattern-bottom.svg);
+    }
+    .container {
+      background-color: white;
+      border-radius: 20px;
+    }
+    .cover-image img {
+      border-radius: 20px 20px 0px 0px;
+    }
+
+    .user-container {
+      text-align: center;
+      font-size: 18px;
+    }
+    .profile-icon {
+      border-radius: 50%;
+      position: relative;
+      top: -50px;
+    }
+
+    .user-container h2 {
+      position: relative;
+      top: -37px;
+      font-weight: 600;
+    }
+    .user-container h5 {
+      position: relative;
+      top: -30px;
+    }
+    .ratings-container {
+      border-top: 1px solid hsl(0, 0%, 59%);
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 16px 30px;
+      font-size: 14px;
+    }
+    .text-color-grey {
+      color: hsl(0, 0%, 59%);
+      font-weight: 400;
+    }
+  </style>
   <body>
-    <h1>Welcome to PHA Web development class</h1>
+    <div class="container">
+      <div class="cover-image">
+        <img src="bg-pattern-card.svg" alt="Cover image card" />
+      </div>
+      <div class="info-container">
+        <div class="user-container">
+          <img
+            src="image-victor.jpg"
+            alt="Image of victor"
+            class="profile-icon"
+          />
+          <h2>Victor Crest <span class="text-color-grey">26</span></h2>
+          <h5 class="text-color-grey">London</h5>
+        </div>
+        <div class="ratings-container">
+          <div class="one">
+            <h3>80k</h3>
+            <p class="text-color-grey">Followers</p>
+          </div>
+          <div class="two">
+            <h3>803k</h3>
+            <p class="text-color-grey">Likes</p>
+          </div>
+          <div class="three">
+            <h3>1.4k</h3>
+            <p class="text-color-grey">Photos</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
